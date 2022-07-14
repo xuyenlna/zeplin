@@ -56,6 +56,19 @@ header {
         height: 4px;
         left: 0;
         bottom: 0;
+        animation: loading 3s ease-in-out 1 alternate-reverse;
+    }
+    @keyframes loading {
+        0% {
+            background-color: #fecf33;
+        }
+
+        50% {
+            background-color: #fe9f33;
+        }
+        100% {
+            background-color: #fbfbfb;
+        }
     }
     .profileDetail {
         position: absolute;
