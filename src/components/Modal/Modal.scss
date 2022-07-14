@@ -1,0 +1,113 @@
+.myModal {
+    // display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(85, 77, 86, 0.7);
+    .myModal-dialog {
+        background-color: #fff;
+        margin: auto;
+        padding: 20px;
+        width: 74%;
+        height: 100vh;
+        box-shadow: 0 0 4px 0 rgba(85, 77, 86, 0.4);
+        border-radius: 4px;
+
+        .myModal-content {
+            width: 100%;
+            position: relative;
+            padding: 36px 24px 0 24px;
+
+            color: #554d56;
+            h1 {
+                line-height: 28px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .planDesc {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+            .planList {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 42px;
+                .planItem:not(:last-child) {
+                    margin-right: 24px;
+                }
+                .planItem {
+                    background-color: #f7f7f7;
+                    width: 272px;
+                    height: 548px;
+                    padding: 24px;
+                    .planContent {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        font-size: 15px;
+                        img {
+                            height: 60px;
+                            width: 75px;
+                            margin-bottom: 16px;
+                        }
+                        h2 {
+                            line-height: 21px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-bottom: 8px;
+                            color: #554d56;
+                        }
+                        p {
+                            margin-bottom: 24px;
+                        }
+                        .monthlyUnitPrice {
+                            line-height: 28px;
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
+                        .seatText {
+                            position: relative;
+                            border-bottom: 1px dotted #979197;
+                        }
+                        .priceText img {
+                            display: block;
+                            height: 24px;
+                            margin-bottom: 6px;
+                        }
+                        .minUserCount {
+                            display: inline-block;
+                            margin-top: 2px;
+                        }
+                        h4 {
+                            line-height: 18px;
+                            font-size: 15px;
+                            font-weight: 500;
+                            margin-bottom: 12px;
+                        }
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                display: flex;
+                                line-height: 18px;
+                                font-size: 15px;
+                                svg {
+                                    margin: 4px 6px 3px 0;
+                                }
+                            }
+                            li:not(:last-child) {
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
